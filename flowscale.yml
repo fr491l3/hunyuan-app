@@ -3,12 +3,20 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: ij4eou9r3q
+    name: text_to_video_api.json
+    file: workflows/text_to_video_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: vbgxayy5uw9
     name: text_to_video.json
     file: workflows/text_to_video.json
-    version: 0
+    version: 1
   - id: 7m8cbr4uflx
     name: video_to_video.json
     file: workflows/video_to_video.json
