@@ -48,5 +48,17 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "url": "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper",
+    "name": "ComfyUI-HunyuanVideoWrapper",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {},
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "sha": "",
+    "cached": "False"
   }
 ]
