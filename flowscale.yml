@@ -4,4 +4,8 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows: []
-normal_workflows: []
+normal_workflows:
+  - id: vbgxayy5uw9
+    name: text_to_video.json
+    file: workflows/text_to_video.json
+    version: 0
