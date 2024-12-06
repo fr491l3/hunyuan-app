@@ -9,3 +9,7 @@ normal_workflows:
     name: text_to_video.json
     file: workflows/text_to_video.json
     version: 0
+  - id: 7m8cbr4uflx
+    name: video_to_video.json
+    file: workflows/video_to_video.json
+    version: 0
