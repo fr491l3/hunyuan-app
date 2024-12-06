@@ -56,7 +56,9 @@
     "fetch_type": "git-clone",
     "details": {},
     "nodes": [],
-    "pip": [],
+    "pip": [
+      "diffusers"
+    ],
     "apt": [],
     "sha": "",
     "cached": "False"
