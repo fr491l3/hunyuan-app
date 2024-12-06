@@ -12,6 +12,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: 069xvt5p1jbt
+    name: video_to_video_api.json
+    file: workflows/video_to_video_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: vbgxayy5uw9
     name: text_to_video.json
@@ -20,4 +28,4 @@ normal_workflows:
   - id: 7m8cbr4uflx
     name: video_to_video.json
     file: workflows/video_to_video.json
-    version: 0
+    version: 1
