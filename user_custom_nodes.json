@@ -57,7 +57,8 @@
     "details": {},
     "nodes": [],
     "pip": [
-      "diffusers"
+      "diffusers",
+      "accelerate"
     ],
     "apt": [],
     "sha": "",
