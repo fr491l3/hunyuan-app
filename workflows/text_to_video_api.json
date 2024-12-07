@@ -59,7 +59,8 @@
             "clip_model": "openai/clip-vit-large-patch14",
             "precision": "fp16",
             "apply_final_norm": false,
-            "hidden_state_skip_layer": 2
+            "hidden_state_skip_layer": 2,
+            "quantization": "disabled"
         },
         "class_type": "DownloadAndLoadHyVideoTextEncoder"
     },
@@ -85,7 +86,7 @@
             "crf": 19,
             "save_metadata": true,
             "pingpong": false,
-            "save_output": false,
+            "save_output": true,
             "images": [
                 "5",
                 0
