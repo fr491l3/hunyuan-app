@@ -7,7 +7,7 @@ workflows:
   - id: ij4eou9r3q
     name: text_to_video_api.json
     file: workflows/text_to_video_api.json
-    version: 1
+    version: 2
     description: ''
     inputs:
       - path: 30.inputs.prompt
@@ -63,7 +63,7 @@ normal_workflows:
   - id: vbgxayy5uw9
     name: text_to_video.json
     file: workflows/text_to_video.json
-    version: 1
+    version: 2
   - id: 7m8cbr4uflx
     name: video_to_video.json
     file: workflows/video_to_video.json
