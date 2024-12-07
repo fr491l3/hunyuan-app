@@ -11,7 +11,7 @@
             ],
             "size": [
                 441,
-                154
+                178
             ],
             "flags": {},
             "order": 0,
@@ -34,7 +34,8 @@
                 "openai/clip-vit-large-patch14",
                 "fp16",
                 false,
-                2
+                2,
+                "disabled"
             ]
         },
         {
@@ -370,79 +371,6 @@
             ]
         },
         {
-            "id": 53,
-            "type": "VHS_VideoCombine",
-            "pos": [
-                1211,
-                -536
-            ],
-            "size": [
-                1274.143310546875,
-                310
-            ],
-            "flags": {},
-            "order": 11,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 86
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": null,
-                    "shape": 7
-                },
-                {
-                    "name": "meta_batch",
-                    "type": "VHS_BatchManager",
-                    "link": null,
-                    "shape": 7
-                },
-                {
-                    "name": "vae",
-                    "type": "VAE",
-                    "link": null,
-                    "shape": 7
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "Filenames",
-                    "type": "VHS_FILENAMES",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "VHS_VideoCombine"
-            },
-            "widgets_values": {
-                "frame_rate": 24,
-                "loop_count": 0,
-                "filename_prefix": "HunhuyanVideo",
-                "format": "video/h264-mp4",
-                "pix_fmt": "yuv420p",
-                "crf": 19,
-                "save_metadata": true,
-                "pingpong": false,
-                "save_output": false,
-                "videopreview": {
-                    "hidden": false,
-                    "paused": false,
-                    "params": {
-                        "filename": "HunhuyanVideo_00012.mp4",
-                        "subfolder": "",
-                        "type": "temp",
-                        "format": "video/h264-mp4",
-                        "frame_rate": 24
-                    },
-                    "muted": false
-                }
-            }
-        },
-        {
             "id": 5,
             "type": "HyVideoDecode",
             "pos": [
@@ -680,6 +608,79 @@
                 "hunyuan_video_vae_bf16.safetensors",
                 "bf16"
             ]
+        },
+        {
+            "id": 53,
+            "type": "VHS_VideoCombine",
+            "pos": [
+                1211,
+                -536
+            ],
+            "size": [
+                550,
+                340
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 86
+                },
+                {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": null,
+                    "shape": 7
+                },
+                {
+                    "name": "meta_batch",
+                    "type": "VHS_BatchManager",
+                    "link": null,
+                    "shape": 7
+                },
+                {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": null,
+                    "shape": 7
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Filenames",
+                    "type": "VHS_FILENAMES",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "VHS_VideoCombine"
+            },
+            "widgets_values": {
+                "frame_rate": 24,
+                "loop_count": 0,
+                "filename_prefix": "HunhuyanVideo",
+                "format": "video/h264-mp4",
+                "pix_fmt": "yuv420p",
+                "crf": 19,
+                "save_metadata": true,
+                "pingpong": false,
+                "save_output": true,
+                "videopreview": {
+                    "hidden": false,
+                    "paused": false,
+                    "params": {
+                        "filename": "HunhuyanVideo_00012.mp4",
+                        "subfolder": "",
+                        "type": "temp",
+                        "format": "video/h264-mp4",
+                        "frame_rate": 24
+                    },
+                    "muted": false
+                }
+            }
         }
     ],
     "links": [
@@ -818,8 +819,8 @@
         "ds": {
             "scale": 0.9090909090909094,
             "offset": [
-                208.31821884685965,
-                305.2462855073912
+                -711.0476014656401,
+                718.4092127534848
             ]
         }
     },
