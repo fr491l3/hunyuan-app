@@ -31,7 +31,7 @@ workflows:
   - id: 069xvt5p1jbt
     name: video_to_video_api.json
     file: workflows/video_to_video_api.json
-    version: 1
+    version: 2
     description: ''
     inputs:
       - path: 43.inputs.video
@@ -67,4 +67,4 @@ normal_workflows:
   - id: 7m8cbr4uflx
     name: video_to_video.json
     file: workflows/video_to_video.json
-    version: 1
+    version: 2
