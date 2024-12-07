@@ -1,4 +1,4 @@
-version: 1
+version: 2
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -33,8 +33,31 @@ workflows:
     file: workflows/video_to_video_api.json
     version: 1
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 43.inputs.video
+        label: Input Video
+        parameter_name: video_43969
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 30.inputs.prompt
+        label: Scene Prompt
+        parameter_name: prompt_13809
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 53.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_40909
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: Output Video
+        demo_type: video
     skip_preprocess: true
 normal_workflows:
   - id: vbgxayy5uw9
