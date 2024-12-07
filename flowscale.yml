@@ -1,4 +1,4 @@
-version: 0
+version: 1
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -9,8 +9,24 @@ workflows:
     file: workflows/text_to_video_api.json
     version: 1
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 30.inputs.prompt
+        label: Scene Prompt
+        parameter_name: prompt_39811
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 34.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_25741
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: Video
+        demo_type: video
     skip_preprocess: true
   - id: 069xvt5p1jbt
     name: video_to_video_api.json
