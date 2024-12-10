@@ -5,7 +5,11 @@
             "base_precision": "bf16",
             "quantization": "fp8_e4m3fn",
             "load_device": "offload_device",
-            "attention_mode": "sdpa"
+            "attention_mode": "sdpa",
+            "block_swap_args": [
+                "41",
+                0
+            ]
         },
         "class_type": "HyVideoModelLoader"
     },
@@ -93,5 +97,12 @@
             ]
         },
         "class_type": "VHS_VideoCombine"
+    },
+    "41": {
+        "inputs": {
+            "double_blocks_to_swap": 20,
+            "single_blocks_to_swap": 0
+        },
+        "class_type": "HyVideoBlockSwap"
     }
 }
