@@ -1,6 +1,6 @@
 {
-    "last_node_id": 40,
-    "last_link_id": 50,
+    "last_node_id": 41,
+    "last_link_id": 51,
     "nodes": [
         {
             "id": 16,
@@ -50,7 +50,7 @@
                 102
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -123,55 +123,6 @@
             ]
         },
         {
-            "id": 1,
-            "type": "HyVideoModelLoader",
-            "pos": [
-                -285,
-                -94
-            ],
-            "size": [
-                426.1773986816406,
-                174
-            ],
-            "flags": {},
-            "order": 2,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "compile_args",
-                    "type": "COMPILEARGS",
-                    "link": null,
-                    "shape": 7
-                },
-                {
-                    "name": "block_swap_args",
-                    "type": "BLOCKSWAPARGS",
-                    "link": null,
-                    "shape": 7
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "model",
-                    "type": "HYVIDEOMODEL",
-                    "links": [
-                        2
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "HyVideoModelLoader"
-            },
-            "widgets_values": [
-                "hunyuan_video_720_cfgdistill_fp8_e4m3fn.safetensors",
-                "bf16",
-                "fp8_e4m3fn",
-                "offload_device",
-                "sdpa"
-            ]
-        },
-        {
             "id": 34,
             "type": "VHS_VideoCombine",
             "pos": [
@@ -183,7 +134,7 @@
                 310
             ],
             "flags": {},
-            "order": 6,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -256,7 +207,7 @@
                 334
             ],
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 0,
             "inputs": [
                 {
@@ -306,6 +257,87 @@
                 "fixed",
                 1,
                 1
+            ]
+        },
+        {
+            "id": 1,
+            "type": "HyVideoModelLoader",
+            "pos": [
+                -285,
+                -94
+            ],
+            "size": [
+                426.1773986816406,
+                174
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "compile_args",
+                    "type": "COMPILEARGS",
+                    "link": null,
+                    "shape": 7
+                },
+                {
+                    "name": "block_swap_args",
+                    "type": "BLOCKSWAPARGS",
+                    "link": 51,
+                    "shape": 7
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "model",
+                    "type": "HYVIDEOMODEL",
+                    "links": [
+                        2
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "HyVideoModelLoader"
+            },
+            "widgets_values": [
+                "hunyuan_video_720_cfgdistill_fp8_e4m3fn.safetensors",
+                "bf16",
+                "fp8_e4m3fn",
+                "offload_device",
+                "sdpa"
+            ]
+        },
+        {
+            "id": 41,
+            "type": "HyVideoBlockSwap",
+            "pos": [
+                -645.227783203125,
+                -32.957035064697266
+            ],
+            "size": [
+                315,
+                82
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "block_swap_args",
+                    "type": "BLOCKSWAPARGS",
+                    "links": [
+                        51
+                    ]
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "HyVideoBlockSwap"
+            },
+            "widgets_values": [
+                20,
+                0
             ]
         },
         {
@@ -396,16 +428,24 @@
             34,
             0,
             "IMAGE"
+        ],
+        [
+            51,
+            41,
+            0,
+            1,
+            1,
+            "BLOCKSWAPARGS"
         ]
     ],
     "groups": [],
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.1,
+            "scale": 0.5644739300537773,
             "offset": [
-                375.8194593372631,
-                111.81568305985559
+                281.0599030137993,
+                619.8820840742708
             ]
         }
     },
