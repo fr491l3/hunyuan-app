@@ -3,70 +3,6 @@
     "last_link_id": 50,
     "nodes": [
         {
-            "id": 3,
-            "type": "HyVideoSampler",
-            "pos": [
-                266,
-                -141
-            ],
-            "size": [
-                315,
-                334
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "model",
-                    "type": "HYVIDEOMODEL",
-                    "link": 2
-                },
-                {
-                    "name": "hyvid_embeds",
-                    "type": "HYVIDEMBEDS",
-                    "link": 36
-                },
-                {
-                    "name": "samples",
-                    "type": "LATENT",
-                    "link": null,
-                    "shape": 7
-                },
-                {
-                    "name": "stg_args",
-                    "type": "STGARGS",
-                    "link": null,
-                    "shape": 7
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "samples",
-                    "type": "LATENT",
-                    "links": [
-                        4
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "HyVideoSampler"
-            },
-            "widgets_values": [
-                512,
-                320,
-                85,
-                30,
-                6,
-                9,
-                6,
-                "fixed",
-                1,
-                1
-            ]
-        },
-        {
             "id": 16,
             "type": "DownloadAndLoadHyVideoTextEncoder",
             "pos": [
@@ -100,45 +36,6 @@
                 false,
                 2,
                 "disabled"
-            ]
-        },
-        {
-            "id": 30,
-            "type": "HyVideoTextEncode",
-            "pos": [
-                179,
-                242
-            ],
-            "size": [
-                408.91546630859375,
-                172.84060668945312
-            ],
-            "flags": {},
-            "order": 3,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "text_encoders",
-                    "type": "HYVIDTEXTENCODER",
-                    "link": 35
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "hyvid_embeds",
-                    "type": "HYVIDEMBEDS",
-                    "links": [
-                        36
-                    ]
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "HyVideoTextEncode"
-            },
-            "widgets_values": [
-                "high quality nature video of a red panda balancing on a bamboo stick while a bird lands on the panda's head, there's a waterfall in the background",
-                "bad quality video",
-                true
             ]
         },
         {
@@ -346,6 +243,109 @@
                     "muted": false
                 }
             }
+        },
+        {
+            "id": 3,
+            "type": "HyVideoSampler",
+            "pos": [
+                266,
+                -141
+            ],
+            "size": [
+                315,
+                334
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "model",
+                    "type": "HYVIDEOMODEL",
+                    "link": 2
+                },
+                {
+                    "name": "hyvid_embeds",
+                    "type": "HYVIDEMBEDS",
+                    "link": 36
+                },
+                {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": null,
+                    "shape": 7
+                },
+                {
+                    "name": "stg_args",
+                    "type": "STGARGS",
+                    "link": null,
+                    "shape": 7
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "links": [
+                        4
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "HyVideoSampler"
+            },
+            "widgets_values": [
+                1024,
+                576,
+                85,
+                30,
+                6,
+                9,
+                6,
+                "fixed",
+                1,
+                1
+            ]
+        },
+        {
+            "id": 30,
+            "type": "HyVideoTextEncode",
+            "pos": [
+                179,
+                242
+            ],
+            "size": [
+                408.91546630859375,
+                172.84060668945312
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "text_encoders",
+                    "type": "HYVIDTEXTENCODER",
+                    "link": 35
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "hyvid_embeds",
+                    "type": "HYVIDEMBEDS",
+                    "links": [
+                        36
+                    ]
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "HyVideoTextEncode"
+            },
+            "widgets_values": [
+                "high quality nature video of a red panda balancing on a bamboo stick while a bird lands on the panda's head, there's a waterfall in the background",
+                "bad quality video",
+                true
+            ]
         }
     ],
     "links": [
@@ -404,8 +404,8 @@
         "ds": {
             "scale": 1.1,
             "offset": [
-                -429.66737926358894,
-                319.0565888215744
+                375.8194593372631,
+                111.81568305985559
             ]
         }
     },
