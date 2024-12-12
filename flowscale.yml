@@ -1,4 +1,4 @@
-version: 3
+version: 4
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -12,20 +12,34 @@ workflows:
     inputs:
       - path: 30.inputs.prompt
         label: Describe the Scene
-        parameter_name: prompt_14605
+        parameter_name: prompt_35924
         type: string
         demo_type: text
         category: input
         randomize: false
+      - path: 3.inputs.width
+        label: Width
+        parameter_name: width_99180
+        type: integer
+        demo_type: number
+        category: input
+        randomize: false
+      - path: 3.inputs.height
+        label: Height
+        parameter_name: height_61895
+        type: integer
+        demo_type: number
+        category: input
+        randomize: false
       - path: 34.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_83792
+        parameter_name: filename_prefix_97234
         type: string
         demo_type: text
         category: output
         randomize: true
     outputs:
-      - label: Video Output
+      - label: Output Video
         demo_type: video
     skip_preprocess: true
   - id: 069xvt5p1jbt
