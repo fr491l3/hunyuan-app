@@ -131,7 +131,7 @@
             ],
             "size": [
                 580.7774658203125,
-                310
+                548.3109741210938
             ],
             "flags": {},
             "order": 7,
@@ -185,79 +185,15 @@
                     "hidden": false,
                     "paused": false,
                     "params": {
-                        "filename": "HunyuanVideo_00009.mp4",
+                        "filename": "HunyuanVideo_00001.mp4",
                         "subfolder": "",
-                        "type": "temp",
+                        "type": "output",
                         "format": "video/h264-mp4",
                         "frame_rate": 16
                     },
                     "muted": false
                 }
             }
-        },
-        {
-            "id": 3,
-            "type": "HyVideoSampler",
-            "pos": [
-                266,
-                -141
-            ],
-            "size": [
-                315,
-                334
-            ],
-            "flags": {},
-            "order": 5,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "model",
-                    "type": "HYVIDEOMODEL",
-                    "link": 2
-                },
-                {
-                    "name": "hyvid_embeds",
-                    "type": "HYVIDEMBEDS",
-                    "link": 36
-                },
-                {
-                    "name": "samples",
-                    "type": "LATENT",
-                    "link": null,
-                    "shape": 7
-                },
-                {
-                    "name": "stg_args",
-                    "type": "STGARGS",
-                    "link": null,
-                    "shape": 7
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "samples",
-                    "type": "LATENT",
-                    "links": [
-                        4
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "HyVideoSampler"
-            },
-            "widgets_values": [
-                1024,
-                576,
-                85,
-                30,
-                6,
-                9,
-                6,
-                "fixed",
-                1,
-                1
-            ]
         },
         {
             "id": 1,
@@ -378,6 +314,70 @@
                 "bad quality video",
                 true
             ]
+        },
+        {
+            "id": 3,
+            "type": "HyVideoSampler",
+            "pos": [
+                266,
+                -141
+            ],
+            "size": [
+                315,
+                334
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "model",
+                    "type": "HYVIDEOMODEL",
+                    "link": 2
+                },
+                {
+                    "name": "hyvid_embeds",
+                    "type": "HYVIDEMBEDS",
+                    "link": 36
+                },
+                {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": null,
+                    "shape": 7
+                },
+                {
+                    "name": "stg_args",
+                    "type": "STGARGS",
+                    "link": null,
+                    "shape": 7
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "links": [
+                        4
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "HyVideoSampler"
+            },
+            "widgets_values": [
+                1024,
+                768,
+                85,
+                30,
+                6,
+                9,
+                6,
+                "fixed",
+                1,
+                1
+            ]
         }
     ],
     "links": [
@@ -442,10 +442,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5644739300537773,
+            "scale": 0.8264462809917359,
             "offset": [
-                281.0599030137993,
-                619.8820840742708
+                108.32314113664046,
+                322.91659410955543
             ]
         }
     },
