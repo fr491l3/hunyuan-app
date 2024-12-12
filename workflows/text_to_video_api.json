@@ -16,7 +16,7 @@
     "3": {
         "inputs": {
             "width": 1024,
-            "height": 576,
+            "height": 768,
             "num_frames": 85,
             "steps": 30,
             "embedded_guidance_scale": 6,
