@@ -73,6 +73,14 @@ workflows:
       - label: Output Video
         demo_type: video
     skip_preprocess: true
+  - id: 5kad71nmv33
+    name: text_to_video.json
+    description: ''
+    file: workflows/text_to_video.json
+  - id: szz3poakur9
+    name: video_to_video.json
+    description: ''
+    file: workflows/video_to_video.json
 normal_workflows:
   - id: vbgxayy5uw9
     name: text_to_video.json
